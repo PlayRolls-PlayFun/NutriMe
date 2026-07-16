@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "NutriMe",
+    "slug": "nutrime-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#F5F5F7",
+    "splash": {
+      "backgroundColor": "#F5F5F7",
+      "resizeMode": "contain"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "infoPlist": {
+        "NSCameraUsageDescription": "NutriMe использует камеру для сканирования еды и автоматического определения калорийности"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#F5F5F7"
+      },
+      "permissions": ["CAMERA"]
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "NutriMe использует камеру для сканирования еды и автоматического определения калорийности"
+        }
+      ]
+    ],
+    "web": {
+      "bundler": "metro",
+      "output": "single"
+    }
+  }
+}
